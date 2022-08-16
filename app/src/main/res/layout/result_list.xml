@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/no_photo"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/no_image" />
+
+    <ImageView
+        android:id="@+id/devices_photo"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="4dp"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/no_image" />
+
+    <TextView
+        android:id="@+id/text_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@id/devices_photo"
+        android:layout_toRightOf="@id/devices_photo"
+        android:text="Device Name : "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="2sp"
+        android:maxLines="1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@id/text_device_name"
+        android:layout_toRightOf="@id/text_device_name"
+
+        android:textStyle="bold"
+        android:text="cisco..............."/>
+
+    <TextView
+        android:id="@+id/text_device_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_device_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@id/devices_photo"
+        android:layout_toRightOf="@id/devices_photo"
+        android:text="Device Id : "
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/device_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_device_name"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/text_device_id"
+        android:layout_toRightOf="@id/text_device_id"
+        android:text="00000"
+        android:textSize="10sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/text_device_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_device_id"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toEndOf="@id/devices_photo"
+        android:layout_toRightOf="@id/devices_photo"
+        android:text="Device Role : "
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/device_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_device_id"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/text_device_role"
+        android:layout_toRightOf="@id/text_device_role"
+        tools:text="Engggg"
+        android:textSize="10sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/text_device_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/text_device_role"
+        android:layout_toEndOf="@id/devices_photo"
+        android:layout_toRightOf="@id/devices_photo"
+        android:text="Status : "
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/device_status"
+        android:layout_width="43dp"
+        android:layout_height="13dp"
+        android:layout_below="@id/text_device_role"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/text_device_status"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/text_device_status"
+        tools:src="@drawable/badge_active" />
+
+    <TextView
+        android:id="@+id/inv_device_status"
+        android:layout_width="43dp"
+        android:layout_height="13dp"
+        android:layout_below="@id/device_role"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/text_device_status"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@id/text_device_status"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/inv_device_manufacturer"
+        android:layout_width="43dp"
+        android:layout_height="13dp"
+        android:layout_below="@id/device_role"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/text_device_status"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@id/text_device_status"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/inv_pic_link"
+        android:layout_width="43dp"
+        android:layout_height="13dp"
+        android:layout_below="@id/device_role"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/text_device_status"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@id/text_device_status"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

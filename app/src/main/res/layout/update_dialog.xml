@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:text="Update Details"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"/>
+
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdeviceNamePUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Device Name"
+            android:paddingLeft="5dp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDeviceNamePUT"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="17dp"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdeviceTypePUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:hint="Type"
+            android:paddingLeft="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDeviceTypePUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdeviceRolePUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:hint="Role"
+            android:paddingLeft="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDeviceRolePUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdeviceTenantPUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:hint="Tenant"
+            android:paddingLeft="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDeviceTenantPUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdevicePlatformPUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:hint="Platform"
+            android:paddingLeft="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDevicePlatformPUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdeviceSerialPUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Serial"
+            android:paddingLeft="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDeviceSerialPUT"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="17dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdeviceTagPUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Tag"
+            android:paddingLeft="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDeviceTagPUT"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="17dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdeviceSitePUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Sites"
+            android:paddingLeft="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDeviceSitePUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdeviceLocationPUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Location"
+            android:paddingLeft="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDeviceLocationPUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdeviceRackPUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="Rack"
+            android:paddingLeft="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDeviceRackPUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdeviceStatusPUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:hint="Status"
+            android:paddingLeft="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDeviceStatusPUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdeviceAirflowPUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:hint="AirFlow"
+            android:paddingLeft="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDeviceAirflowPUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdeviceIPv4PUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="IPv4"
+            android:paddingLeft="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDeviceIPv4PUT"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="17dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputdeviceIPv6PUT"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:hint="IPv6"
+            android:paddingLeft="5dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteDeviceIPv6PUT"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="17dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        -------------------------------------------------------------------------------------------------------
+        -------------------------------------------------------------------------------------------------------
+        -------------------------------------------------------------------------------------------------------
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="right">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#D52A2A"
+                android:text="cancel"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/simpan"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#4CAF50"
+                android:text="simpan"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
